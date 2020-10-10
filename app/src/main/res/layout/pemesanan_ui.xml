@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_pemesanan_image"
+                android:contentDescription="@string/image_pemesanan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_pemesanan_nama"
+                    android:text="Single Room"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_pemesanan_kapasitas"
+                    android:text="Fasilitas : 2 Orang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_pemesanan_kamarkosong"
+                    android:text="Kamar tersisa : 5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_pemesanan_harga"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/blue"
+                    android:text="Harga Rp 300.000"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/txt_pemesanan_deskripsi"
+            android:text="kamar yang dilengkapi dengan satu buah tempat tidur berukuran double (ranjang besar yang muat untuk dua orang)."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/btn_pemesanan_pesan"
+            android:text="@string/booking"
+            android:textColor="@color/white"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

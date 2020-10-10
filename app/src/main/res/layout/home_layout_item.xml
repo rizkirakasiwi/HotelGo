@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="8dp"
+    app:cardCornerRadius="12dp"
+    android:background="@color/white"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_homelayout_image"
+                android:adjustViewBounds="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:maxWidth="250dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Hotel Selabintana"
+                    android:id="@+id/txt_homeLayout_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        android:id="@+id/rating_homeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginStart="8dp"
+                        android:text="4.0"
+                        android:textColor="@color/dark"
+                        android:id="@+id/txt_homeLayout_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="8dp"
+                    android:background="@color/blue"
+                    android:backgroundTint="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/white"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/txt_home_harga"
+                        android:text="@string/harga_dimulai_dari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_homeLayout_lokasi"
+            android:textColor="@color/light"
+            android:text="Jl Selabintana, Kab Sukabumi Jawa barat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/img_homeLayout_goLocation"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/ic_location_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@string/lihat_lokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/img_homeLayout_telf"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/ic_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@string/telefon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

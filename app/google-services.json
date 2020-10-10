@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "589024094113",
+    "firebase_url": "https://hotelgo-aa92f.firebaseio.com",
+    "project_id": "hotelgo-aa92f",
+    "storage_bucket": "hotelgo-aa92f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589024094113:android:85ab23b4ffba8a0d0a4de0",
+        "android_client_info": {
+          "package_name": "com.example.hotelgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589024094113-1q436q489eate8m9ks8foedfr9ohddv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hotelgo",
+            "certificate_hash": "15f2a32cc93ff4b9d454f09a2495828c890451b3"
+          }
+        },
+        {
+          "client_id": "589024094113-lshklnpfn5t4h5lvkomu4r81mksb4io8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD52ubWKXiPVvWjYC8sUqRZ7xk6kADLYok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589024094113-lshklnpfn5t4h5lvkomu4r81mksb4io8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
